@@ -105,14 +105,81 @@
         <div class="row">
           <div class="left-sidebar col-sm-3">
             <h2>Senarai Job RDS</h2>
-            <div>
-             <a href="#" class="btn azm-social azm-btn azm-pill azm-stack-overflow" width="100px"><i class="fa fa-calendar"></i> MINGGU 1ST SEPTEMBER</a> 
-             <a href="#" class="btn azm-social azm-btn azm-pill azm-stack-overflow" width="100px"><i class="fa fa-calendar"></i> MINGGU 2ND SEPTEMBER</a>
+            <div style="overflow-y: scroll; height:300px;">
+             <a href="#" class="btn azm-social azm-btn azm-pill azm-stack-overflow" style="width:195px !important;" id="btn1"><i class="fa fa-calendar pull-left"></i> MEI 2015</a> 
+             <a href="#" class="btn azm-social azm-btn azm-pill azm-stack-overflow" style="width:195px !important;"id="btn2"><i class="fa fa-calendar pull-left"></i> MAC 2015</a>
+             <a href="#" class="btn azm-social azm-btn azm-pill azm-stack-overflow" style="width:195px !important;" id="btn1"><i class="fa fa-calendar pull-left"></i> DESEMBER 2014</a> 
+             <a href="#" class="btn azm-social azm-btn azm-pill azm-stack-overflow" style="width:195px !important;" id="btn2"><i class="fa fa-calendar pull-left"></i> JULAI 2014</a>
+             
              </div> 
           </div>
           <div class="right-sidebar col-sm-9">
             <div id="table1">
             <h2 class="title text-center">MINGGU 1ST SEPTEMBER</h2>
+            <div class="table-responsive cart_info">
+              <table class="table table-condensed">
+                <thead>
+                  <tr class="cart_menu">
+                      <td class="price">Nama</td>
+                      <td class="description">Huraian</td>
+                      <td class="total" style="text-align:center;">Price</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="cart_price"><h4>Hazliza</h4></td>
+                    <td class="cart_description">
+                      <h4>Majlis Keraian</h4>
+                      <p>Fountain Buffet Package</p>
+                    </td>
+                    <td class="cart_total_price">RM 100</td>
+                  </tr>
+                  <tr>
+                    <td class="cart_price"><h4>Su</h4></td>
+                    <td class="cart_description">
+                      <h4>Majlis Keraian</h4>
+                      <p>Sewa CFM saiz M</p>
+                    </td>
+                    <td class="cart_total_price">-</td>
+                  </tr>
+                  <tr>
+                    <td class="cart_price"><h4>Shari</h4></td>
+                    <td class="cart_description">
+                      <h4>Majlis Akikah</h4>
+                      <p>Sewa CFM saiz M</p>
+                    </td>
+                    <td class="cart_total_price">-</td>
+                  </tr>
+                  <tr>
+                    <td class="cart_price"><h4>Mimie</h4></td>
+                    <td class="cart_description">
+                      <h4>Majlis Kahwin</h4>
+                      <p>Sewa CFM saiz M</p>
+                    </td>
+                    <td class="cart_total_price">-</td>
+                  </tr>
+                  <tr>
+                    <td class="cart_price"><h4>Aida</h4></td>
+                    <td class="cart_description">
+                      <h4>Majlis Harilahir</h4>
+                      <p>Fountain Buffet + Popcorn</p>
+                    </td>
+                    <td class="cart_total_price">RM 200</td>
+                  </tr>
+                  <tr>
+                    <td class="cart_price"><h4>En.Muhammad</h4></td>
+                    <td class="cart_description">
+                      <h4>Majlis Akikah</h4>
+                      <p>Fountain Buffet + Popcorn + Mesin Gula Kapas</p>
+                    </td>
+                    <td class="cart_total_price">RM 200</td>
+                  </tr>
+                </tbody>
+              </table>
+			</div>
+          </div>
+          <div id="table2">
+            <h2 class="title text-center">MINGGU 2ND SEPTEMBER</h2>
             <div class="table-responsive cart_info">
               <table class="table table-condensed">
                 <thead>
@@ -196,5 +263,21 @@
 	<script src="js/price-range.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/main.js"></script>
+    <script type="text/javascript">
+      $( document ).ready(function() {
+        $('#table1').show();
+        $('#table2').hide();
+      });
+      
+      $('#btn1').click(function(){
+        $('#table1').show();
+        $('#table2').hide();
+      });
+      
+      $('#btn2').click(function(){
+        $('#table2').show();
+        $('#table1').hide();
+      });
+    </script>
 </body>
 </html>
