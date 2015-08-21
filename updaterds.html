@@ -14,6 +14,8 @@
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/responsive.css" rel="stylesheet">
     <link href="css/btn-style.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/app.css" type="text/css" />
+	<link rel="stylesheet" href="js/fullcalendar/fullcalendar.css" type="text/css"  />
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -89,7 +91,7 @@
                                     </ul>
                                 </li> 
 								<li><a href="service-repair.html">SERVICE & REPAIR</a></li>
-								<li><a href="tips.html">TIPS</a></li>
+								<li><a href="tips.html">BLOG</a></li>
 								<li><a href="updaterds.html">UPDATE RDS</a></li>
 								<li><a href="portfolio.html">PORTFOLIO</a></li>
 								<li><a href="contact-us.html">HUBUNGI KAMI</a></li>
@@ -100,154 +102,30 @@
 			</div>
 		</div><!--/header-bottom-->
 	</header><!--/header-->
-	<section id="cart_items">
-      <div class="container">
-        <div class="row">
-          <div class="left-sidebar col-sm-3">
-            <h2>Senarai Job RDS</h2>
-            <div style="overflow-y: scroll; height:300px;">
-             <a href="#" class="btn azm-social azm-btn azm-pill azm-stack-overflow" style="width:195px !important;" id="btn1"><i class="fa fa-calendar pull-left"></i> MEI 2015</a> 
-             <a href="#" class="btn azm-social azm-btn azm-pill azm-stack-overflow" style="width:195px !important;"id="btn2"><i class="fa fa-calendar pull-left"></i> MAC 2015</a>
-             <a href="#" class="btn azm-social azm-btn azm-pill azm-stack-overflow" style="width:195px !important;" id="btn1"><i class="fa fa-calendar pull-left"></i> DESEMBER 2014</a> 
-             <a href="#" class="btn azm-social azm-btn azm-pill azm-stack-overflow" style="width:195px !important;" id="btn2"><i class="fa fa-calendar pull-left"></i> JULAI 2014</a>
-             
-             </div> 
-          </div>
-          <div class="right-sidebar col-sm-9">
-            <div id="table1">
-            <h2 class="title text-center">MINGGU 1ST SEPTEMBER</h2>
-            <div class="table-responsive cart_info">
-              <table class="table table-condensed">
-                <thead>
-                  <tr class="cart_menu">
-                      <td class="price">Nama</td>
-                      <td class="description">Huraian</td>
-                      <td class="total" style="text-align:center;">Price</td>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="cart_price"><h4>Hazliza</h4></td>
-                    <td class="cart_description">
-                      <h4>Majlis Keraian</h4>
-                      <p>Fountain Buffet Package</p>
-                    </td>
-                    <td class="cart_total_price">RM 100</td>
-                  </tr>
-                  <tr>
-                    <td class="cart_price"><h4>Su</h4></td>
-                    <td class="cart_description">
-                      <h4>Majlis Keraian</h4>
-                      <p>Sewa CFM saiz M</p>
-                    </td>
-                    <td class="cart_total_price">-</td>
-                  </tr>
-                  <tr>
-                    <td class="cart_price"><h4>Shari</h4></td>
-                    <td class="cart_description">
-                      <h4>Majlis Akikah</h4>
-                      <p>Sewa CFM saiz M</p>
-                    </td>
-                    <td class="cart_total_price">-</td>
-                  </tr>
-                  <tr>
-                    <td class="cart_price"><h4>Mimie</h4></td>
-                    <td class="cart_description">
-                      <h4>Majlis Kahwin</h4>
-                      <p>Sewa CFM saiz M</p>
-                    </td>
-                    <td class="cart_total_price">-</td>
-                  </tr>
-                  <tr>
-                    <td class="cart_price"><h4>Aida</h4></td>
-                    <td class="cart_description">
-                      <h4>Majlis Harilahir</h4>
-                      <p>Fountain Buffet + Popcorn</p>
-                    </td>
-                    <td class="cart_total_price">RM 200</td>
-                  </tr>
-                  <tr>
-                    <td class="cart_price"><h4>En.Muhammad</h4></td>
-                    <td class="cart_description">
-                      <h4>Majlis Akikah</h4>
-                      <p>Fountain Buffet + Popcorn + Mesin Gula Kapas</p>
-                    </td>
-                    <td class="cart_total_price">RM 200</td>
-                  </tr>
-                </tbody>
-              </table>
+	<h2 class="title text-center">UPDATE RDS</h2>
+	<aside class="wrapper">
+		<section class="panel no-border bg-light">
+		  <header class="panel-heading bg-primary clearfix">
+			<div class="btn-group pull-right" data-toggle="buttons">
+			  <label class="btn btn-sm btn-bg btn-default active" id="monthview">
+				<input type="radio" name="options">Month
+			  </label>
+			  <label class="btn btn-sm btn-bg btn-default" id="weekview">
+				<input type="radio" name="options">Week
+			  </label>
+			  <label class="btn btn-sm btn-bg btn-default" id="dayview">
+				<input type="radio" name="options">Day
+			  </label>
 			</div>
-          </div>
-          <div id="table2">
-            <h2 class="title text-center">MINGGU 2ND SEPTEMBER</h2>
-            <div class="table-responsive cart_info">
-              <table class="table table-condensed">
-                <thead>
-                  <tr class="cart_menu">
-                      <td class="price">Nama</td>
-                      <td class="description">Huraian</td>
-                      <td class="total" style="text-align:center;">Price</td>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="cart_price"><h4>Hazliza</h4></td>
-                    <td class="cart_description">
-                      <h4>Majlis Keraian</h4>
-                      <p>Fountain Buffet Package</p>
-                    </td>
-                    <td class="cart_total_price">RM 100</td>
-                  </tr>
-                  <tr>
-                    <td class="cart_price"><h4>Su</h4></td>
-                    <td class="cart_description">
-                      <h4>Majlis Keraian</h4>
-                      <p>Sewa CFM saiz M</p>
-                    </td>
-                    <td class="cart_total_price">-</td>
-                  </tr>
-                  <tr>
-                    <td class="cart_price"><h4>Shari</h4></td>
-                    <td class="cart_description">
-                      <h4>Majlis Akikah</h4>
-                      <p>Sewa CFM saiz M</p>
-                    </td>
-                    <td class="cart_total_price">-</td>
-                  </tr>
-                  <tr>
-                    <td class="cart_price"><h4>Mimie</h4></td>
-                    <td class="cart_description">
-                      <h4>Majlis Kahwin</h4>
-                      <p>Sewa CFM saiz M</p>
-                    </td>
-                    <td class="cart_total_price">-</td>
-                  </tr>
-                  <tr>
-                    <td class="cart_price"><h4>Aida</h4></td>
-                    <td class="cart_description">
-                      <h4>Majlis Harilahir</h4>
-                      <p>Fountain Buffet + Popcorn</p>
-                    </td>
-                    <td class="cart_total_price">RM 200</td>
-                  </tr>
-                  <tr>
-                    <td class="cart_price"><h4>En.Muhammad</h4></td>
-                    <td class="cart_description">
-                      <h4>Majlis Akikah</h4>
-                      <p>Fountain Buffet + Popcorn + Mesin Gula Kapas</p>
-                    </td>
-                    <td class="cart_total_price">RM 200</td>
-                  </tr>
-                </tbody>
-              </table>
-			</div>
-          </div>
-          </div>
-        </div>
-        
-      </div>
-	</section>
-	
+			<span class="m-t-xs inline text-white">
+			  Fullcalendar
+			</span>
+		  </header>
+		  <div class="calendar" id="calendar">
+
+		  </div>
+		</section>
+	</aside>
 	<footer id="footer"><!--Footer-->
 		<div class="footer-bottom">
 			<div class="container">
@@ -262,6 +140,8 @@
 	<script src="js/jquery.scrollUp.min.js"></script>
 	<script src="js/price-range.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
+	<script src="js/fullcalendar/fullcalendar.min.js"></script>
+	<script src="js/fullcalendar/demo.js"></script>
     <script src="js/main.js"></script>
     <script type="text/javascript">
       $( document ).ready(function() {
