@@ -104,7 +104,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-8">
-            <img src="images/map.gif" alt="" height="500" width="750" style="border: 10px solid;"/>
+            <div id="map" style="height: 500px; width: 750px; background-color: rgb(229, 227, 223);"></div>
           </div>
           <div class="col-sm-4">
             <div class="contact-info">
@@ -160,5 +160,29 @@
 	<script src="js/price-range.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/gmaps.js"></script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDA0zfKMvpWgjlOlwLo4sEo0irfqP_SHyk&callback=initMap">
+    </script>
+    <script type="text/javascript">
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 3.072993, lng: 101.540767},
+          zoom: 17,
+          scrollwheel: false
+            });
+             var marker = map.addMarker({
+                  lat: 3.072993,
+                        lng: 101.540767,
+                  title: 'Loop, Inc.',
+                  infoWindow: {
+                      content: "<b>Kami di sini</b>"
+                  }
+              });
+             marker.infoWindow.open(map, marker);
+      }
+    </script>
+          
 </body>
 </html>
