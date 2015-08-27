@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rose Delight Shop</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<header id="header"><!--header-->
+    <div class="header_top"><!--header_top-->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="contactinfo">
+                        <ul class="nav nav-pills">
+                            <li><a href="#"><i class="fa fa-user"></i> Azman </a></li>
+                            <li><a href="#"><i class="fa fa-phone"></i> 0162637676 </a></li>
+                            <li><a href="#"><i class="fa fa-envelope"></i> azmanrunie@yahoo.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="social-icons pull-right">
+                        <ul class="nav navbar-nav">
+                            <li><a href="https://www.facebook.com/RoseDelight">
+                              <i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://plus.google.com/108748537563535690135/posts">
+                              <i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--/header_top-->
+    
+    <div class="header-middle"><!--header-middle-->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="logo pull-left">
+                        <a href="index.html"><%= image_tag("home/rds_logo.jpg", :alt => "", height: '50', width: '50')%><font style="font-family:Rockwell; font-size: 30px; color:#4B088A; ">Rose Delight Shop</font></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--/header-middle-->
+
+    <div class="header-bottom"><!--header-bottom-->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="mainmenu pull-left">
+                        <ul class="nav navbar-nav collapse navbar-collapse">
+                            <li><a href="index.html" class="active">LAMAN UTAMA</a></li>
+                            <li class="dropdown"><a href="#">PRODUK<i class="fa fa-angle-down"></i></a>
+                                <ul role="menu" class="sub-menu">
+                                    <li><a href="product.html">As Seen On TV</a></li>
+                                    <li><a href="product.html">Momkids</a></li> 
+                                    <li><a href="product.html">Candies</a></li> 
+                                    <li><a href="product.html">Marshmallow</a></li> 
+                                    <li><a href="product.html">Popcorn Maker</a></li> 
+                                </ul>
+                            </li> 
+                            <li class="dropdown"><a href="#">PAKEJ<i class="fa fa-angle-down"></i></a>
+                                <ul role="menu" class="sub-menu">
+                                    <li><a href="rental-package.html">Pakej Sewaan Candy Buffet</a></li>
+                                    <li><a href="rental-package.html">Pakej Sewaan BBQ Grill Steambot</a></li>
+                                    <li><a href="rental-package.html">Pakej Sewaan Wind Guard</a></li>
+                                </ul>
+                            </li> 
+                            <li><a href="service-repair.html">SERVICE & REPAIR</a></li>
+                            <li><a href="tips.html">BLOG</a></li>
+                            <li><a href="updaterds.html">UPDATE RDS</a></li>
+                            <li><a href="portfolio.html">PORTFOLIO</a></li>
+                            <li><a href="contact-us.html">HUBUNGI KAMI</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--/header-bottom-->
+</header><!--/header-->
+
+
+<%= yield %>
+
+<footer id="footer"><!--Footer-->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <p class="pull-left">Copyright © 2015 Rosedelightshop. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer><!--/Footer-->
+
+
+</body>
+</html>
